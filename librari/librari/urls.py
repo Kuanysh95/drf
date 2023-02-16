@@ -22,7 +22,7 @@ from rest_framework.authtoken.views import obtain_auth_token
 router = DefaultRouter()
 router.register('authors', AuthorModelViewSet)
 router.register('article', ArticleModelViewSet)
-router.register('book', BookModelViewSet)
+router.register('books', BookModelViewSet)
 router.register('biography', BiographyModelViewSet)
 
 urlpatterns = [
