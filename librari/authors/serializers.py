@@ -8,6 +8,12 @@ class AuthorModelSerializer(ModelSerializer):
         fields = '__all__'
 
 
+class AuthorModelSerializer2(ModelSerializer):
+    class Meta:
+        model = Author
+        fields = ['first_name']
+
+
 class BiographyModelSerializer(ModelSerializer):
     class Meta:
         model = Biography
